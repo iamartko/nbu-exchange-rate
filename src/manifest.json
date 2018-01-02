@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "NBU Exchange Rate",
+  "description": "This extension allows you to know exchange rate of NBU (National Bank of Ukraine)",
+  "version": "1.0.0",
+  "author": "@iamartko",
+  "icons": {
+    "16": "media/icon16.png",
+    "48": "media/icon48.png",
+    "128": "media/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "media/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here to know exchange rate"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://bank.gov.ua/"
+  ],
+  "background": {
+    "scripts": [
+    ]
+  }
+}

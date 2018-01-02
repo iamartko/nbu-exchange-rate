@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>NBU Exchange Rate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/material.min.green.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout">
+    <main class="mdl-layout__content content mdl-color-text--grey-600">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="title">
+                    <h1>
+                        <i class="material-icons">trending_up</i>
+                        <span>NBU Exchange Rate</span>
+                    </h1>
+                </div>
+                <div class="form">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label date-container">
+                            <input class="mdl-textfield__input" type="date" id="date" autocomplete="off"
+                                   min="2000-01-01" max="">
+                            <label class="mdl-textfield__label" for="date">Date</label>
+                            <span class="mdl-textfield__error">Incorrect Date</span>
+                        </div>
+                        <div class="mdl-tooltip mdl-tooltip--top" for="date" id="date-tooltip"></div>
+                        <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate loader" id="loader"></div>
+                        <div id="rates-container">
+                            <table class="mdl-data-table mdl-js-data-table table">
+                                <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric mdl-color--grey-100">Currency</th>
+                                    <th class="mdl-color-text--primary mdl-color--grey-100">Rate (UAH)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">USD</td>
+                                    <td class="rate">...</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">EUR</td>
+                                    <td class="rate">...</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">GBP</td>
+                                    <td class="rate">...</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">CHF</td>
+                                    <td class="rate">...</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">PLN</td>
+                                    <td class="rate">...</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">RUB</td>
+                                    <td class="rate">...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="footer mdl-color-text--primary">
+                                <span>Using <a class="mdl-color-text--primary-dark" href="https://bank.gov.ua/control/en/index" target="_blank">National Bank of Ukraine</a> API</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<!-- JS -->
+<script src="js/material.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/popup.js"></script>
+</body>
+</html>

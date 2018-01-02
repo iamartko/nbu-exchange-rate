@@ -1,0 +1,52 @@
+html {
+    min-width: 300px;
+}
+
+.content {
+    background: #fafafa;
+}
+
+.title h1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+    text-align: center;
+}
+
+.material-icons {
+    line-height: inherit;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.form .table {
+    width: 100%;
+}
+
+.form .table tr {
+    height: 34px;
+}
+
+.form .table td,
+.form .table th {
+    height: 34px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.form .date-container input {
+    height: 24px;
+}
+
+.loader {
+    visibility: hidden;
+}
+
+.error {
+    text-align: center;
+}
+
+.footer {
+    font-size: 10px;
+    text-align: right;
+}
