@@ -112,7 +112,7 @@ class Popup {
             </tbody>
         </table>
         <div class="footer mdl-color-text--primary">
-            <span>Using <a class="mdl-color-text--primary-dark" href="https://bank.gov.ua/control/en/index" target="_blank">National Bank of Ukraine</a> API</span>
+            <span>Using <a class="mdl-color-text--primary-dark" href="https://bank.gov.ua/ua/open-data/api-dev" target="_blank">National Bank of Ukraine</a> API</span>
         </div>
         `;
     }
