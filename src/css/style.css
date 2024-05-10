@@ -50,3 +50,7 @@ html {
     font-size: 10px;
     text-align: right;
 }
+
+body > .mdl-layout__container {
+    position: relative;
+}
