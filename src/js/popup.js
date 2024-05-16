@@ -1,6 +1,6 @@
 class Popup {
     constructor() {
-        this._currencyCodes = ['USD', 'EUR', 'GBP', 'CHF', 'PLN', 'RUB'];
+        this._currencyCodes = ['USD', 'EUR', 'GBP', 'CHF', 'CZK', 'PLN'];
         this._url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json&date=';
         this.onLoad();
     }
