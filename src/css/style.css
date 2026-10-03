@@ -1,5 +1,10 @@
-html {
-    min-width: 300px;
+/*
+ * Chrome sizes the popup to the content's preferred width, which is no longer
+ * capped by min-width alone. Pin the width explicitly: 300px date field
+ * (.mdl-textfield) + 8px grid padding + 8px cell margin on each side.
+ */
+body {
+    width: 332px;
 }
 
 .content {
